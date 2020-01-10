@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <a class="btn btn-primary btn-lg" type="submit" href="/scrape">Scrape New Data</a>
+      </div>
+      <h2>Latest Mars News</h2>
+      <h4>{{mars_results.news_title}}</h4>
+      <p>{{mars_results.news_text}}</p>
+      <div class="row">
+        <div class="col-7">
+          <h2>Featured Mars Image</h2>
+          <img src="{{mars_results.ft_image_url}}" class="img-fluid" alt="featured_image">
+        </div>
+        <div class="col">
+          <div class="card p-2">
+              <h5 class="card-title p-1">Current Weather On Mars</h5>
+              <p class="card-text p-2">{{mars_results.mars_weather}}</p>
+          </div>
+          <br>
+          <br>
+          <h4>Mars Facts</h4>
+          <div class="col">
+            {{mars_results.mars_table}}
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Mars Hemispheres</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        {%for dict in mars_results.hems_imgs%}
+        <div class="col-6">
+          <div class="card mb-4">
+            <img src="{{dict.image_url}}" class="card-img-top" alt="hems">
+            <div class="card-body">
+              <h5 class="card-title">{{dict.title}}</h5>
+            </div>
+          </div>
+        </div>
+        {%endfor%}
+      </div>
+    </div>
+  </body>
+  
+  </html>
