@@ -70,6 +70,7 @@ def scrape():
     dfs = pd.read_html(url4)
     mars_facts = dfs[0]
     mars_facts=mars_facts.rename(columns={0:'Description', 1:'Value'})
+    mars_facts=mars_facts.set_index("Description")
     html_table=mars_facts.to_html()
     html_table=html_table.replace('\n', '')
 
