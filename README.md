@@ -3,19 +3,19 @@
 In this assignment, I built a web application that scrapes various websites for data related to Mars and displayed the information in a single HTML page. I completed the web scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
 ## Scraping: 
-- **NASA Mars News:
+- **NASA Mars News:**
 Collected the latest News Titles and paragraph text from [NASA Mars News Site](https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest).
 
-- **JPL Mars Space Images:
+- **JPL Mars Space Images:**
 Used splinter to navigate site for [JPL Featured Space Image](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars) and captured current feautred image of Mars.
 
-- **Mars Weather:
+- **Mars Weather:**
 Scraped the latest Mars weather from the [Mars Weather Twitter Account](https://twitter.com/marswxreport?lang=en).
 
-- **Mars Facts:
+- **Mars Facts:**
 Used Pandas to scrape table of Mars facts from the [Mars Facts webpage](https://space-facts.com/mars/) and converted data to a HTML table string.
 
-- **Mars Hemispheres:
+- **Mars Hemispheres:**
 Obtained images for each of Mar's hemispheres from [USGS Astrogeology site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) and used Python dictionaries to store data.
 
 ## MongoDB & Flask Application: 
