@@ -21,8 +21,8 @@ Obtained images for each of Mar's hemispheres from [USGS Astrogeology site](http
 ## MongoDB & Flask Application: 
 Used MongoDB with Flask templating and created a new HTML page that displays all of the information that was scraped from the URLs above. 
 
-![html part 1](html_page_screenshots\html_page1.png)
-![html part 2](html_page_screenshots\html_page2.png)
+![html part 1](html_page_screenshots/html_page1.png)
+![html part 2](html_page_screenshots/html_page2.png)
 
 ## Repository Guide:
 - **mission_to_mars.ipynb:** jupyter notebook file with script for scraping and analysis.
