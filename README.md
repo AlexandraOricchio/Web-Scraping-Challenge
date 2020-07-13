@@ -23,6 +23,7 @@ Used MongoDB with Flask templating and created a new HTML page that displays all
 
 ![html part 1](C:\Users\aeori\git\Web-Scraping-Challenge\html_page_screenshots\html_page1.png)
 ![html part 2](C:\Users\aeori\git\Web-Scraping-Challenge\html_page_screenshots\html_page2.png)
+
 ## Repository Guide:
 - **mission_to_mars.ipynb:** jupyter notebook file with script for scraping and analysis.
 - **scrape_mars.py:** python script with functions to execute data scrape and store the results into a python dictionary. 
